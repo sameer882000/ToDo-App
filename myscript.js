@@ -42,9 +42,7 @@ function show() {
         html += '<li>' + todo[i] + '<button class="remove" id="' + i  + '">Delete</button> </li>';
     };
     html += '</ul>';
- 
     document.getElementById('todo').innerHTML = html;
- 
     var buttons = document.getElementsByClassName('remove');
     for (var i=0; i < buttons.length; i++) {
         buttons[i].addEventListener('click', remove);
